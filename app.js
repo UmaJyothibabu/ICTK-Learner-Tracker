@@ -32,7 +32,7 @@ app.use("/api", bulkUploadApi); // Mounting the bulk upload route
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(process.env.mongodb_url);
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
+    console.log(`MongoDB  Atlas Connected: ${conn.connection.host}`);
   } catch (error) {
     console.log(error);
     process.exit(1);
